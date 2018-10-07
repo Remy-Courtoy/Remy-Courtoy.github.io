@@ -24,7 +24,7 @@ urlcolor: blue
 
 *Université de Mons*, Bachelier en Biologie \hfill 2020
 
-*Ecole secondaire*, orientation \hfill 2017
+*Ecole secondaire*, orientation sciences fortes\hfill 2017
 
 
 # EMPLOIS
