@@ -211,7 +211,8 @@
     <h2><a href="../../project/example-project/">My project</a></h2>
     <div class="article-style">
 
-      Voici un code simple (utilisable dans un R Script) représentant un réseau de neurons artificiels avec 2 entrées et 1 sortie sans couche cachée de neurones.
+      Here is a simple code (usable in a R Script) representing a network of artificial neurons with 2 inputs and 1 output without hidden layer of neurons.
+
       <img src="../../img/NN1.jpg" alt=""/>
       <pre><code>
 #Reseau de neurone artificiels avec 2 entrees et une sortie
@@ -309,6 +310,9 @@ tab_s # affichage du tableau de la somme des produits
 tab_fs # affichage du tableau du resultat de la fonction d'activation sigmoide
 plot(main = "NEURAL NETWORK ERROR DECREASE", tab_RUN, tab_E, type = "l") # realisation du graphique montrant la diminution d el'erreur de prediction en fonction du nombre d'iterrations de la boucle'
 </code></pre>
+Explanations: the inputs X1 and X2 are weighted by the weights (w1 and w2) to which they are connected and we add to that the bias which is the threshold from which the neuron is activated and gives an output which is the sum of products (s). The sum of the products is converted into a number between 0 and 1 by an activation function, the sigmoid function (fs). Then, the result of the activation function is compared to the output that was provided for these inputs X1 and X2 (supervised learning) to calculate the prediction error (E); E = 1/2 * (desired output - fs) * (desired output - fs). Once we have the prediction error, we must modify the weights (w1 and w2) proportionally to the error they cause; for this, it is necessary to make "go back" the error to the weights by using the derivative (derivative of E with respect to the small changes of w).
+We change the weights to minimize E.
+
 
     </div>
   </div>
